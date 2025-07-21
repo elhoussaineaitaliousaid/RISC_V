@@ -1,5 +1,5 @@
-"# RISC_V" 
-# 💻 Processeur Multicycle en VHDL
+
+#  Processeur Multicycle en VHDL
 
 Ce projet implémente un processeur multicycle basé sur une architecture MIPS simplifiée, conçu en VHDL. Il simule le fonctionnement d’un processeur capable d’exécuter des instructions de type R, I et de mémoire, en utilisant des modules séparés interconnectés.
 
@@ -29,7 +29,7 @@ La simulation a été réalisée avec **ModelSim** et **GHDL**.
 
 Dans ModelSim, les fichiers ont été compilés dans cet ordre :
 
-```tcl
+--`tcl
 vcom pc.vhdl
 vcom adder_pc.vhdl
 vcom alu.vhdl
@@ -43,4 +43,9 @@ vcom top.vhdl
 vcom top_tb.vhdl
 vsim work.top_tb
 run 500 ns
-
+.
+├── .git/                # Dossier Git (initialisé avec git init)
+├── simulation/          # Fichiers de sortie des simulations (VCD, log, etc.)
+├── src/                 # Modules VHDL (ALU, PC, registre, mémoire, etc.)
+├── testbench/           # Bancs de test pour validation du top-level
+├── README.md            # Description complète du projet
