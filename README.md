@@ -21,7 +21,7 @@ Le projet est composé des fichiers suivants :
 | `top.vhdl`         | Intégration de tous les modules            |
 | `top_tb.vhdl`      | Banc de test complet pour simulation       |
 
-## ⚙️ Simulation
+##  Simulation
 
 La simulation a été réalisée avec **ModelSim** et **GHDL**.
 
